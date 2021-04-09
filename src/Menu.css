@@ -1,0 +1,240 @@
+/* Barra */
+
+.barra {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    float: left;
+    background: #505ED7;
+}
+
+.logo {
+    width: 15%;
+    height: 180px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barra .opciones {
+    padding-top: 50px;
+    padding-left: 3%;
+}
+
+.barra td {
+    color: rgba(255, 255, 255, 0.575);
+    padding-bottom: 20px;
+}
+
+.barra p {
+    padding-top: 50px;
+    color: white;
+}
+
+/* Contenido */
+
+.contenido {
+    position: relative;
+    width: 85%;
+    height: 100vh;
+    margin-left: auto; 
+    margin-right: 0;
+    border-radius: 25px;
+    background: #FFFEFE;
+}
+
+.contenido .barra_superior {
+    padding-left: 50px;
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.contenido .barra_superior .profile{
+    float: right;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.contenido .barra_superior .helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.contenido .barra_superior img {
+    vertical-align: middle;
+}
+
+.barra_superior button {
+    width: 80px;
+    height: 25px;
+    background: #f3f0f1;
+    position: relative;
+    background: #f3f0f1;
+    border-radius: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.contenido .dinero {
+    background-color: rgb(214, 214, 214);
+    margin-left: 5%;
+    width: 230px;
+    border-radius: 25px;
+    float: left;
+    font-weight: bold;
+}
+
+.contenido .dinero img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding-right: 10px;
+}
+
+.contenido .tablas {
+    height: 65%;
+}
+
+.contenido .tablas .balance {
+    background-image: url(https://image.freepik.com/vector-gratis/mercado-bursatil-o-forex-grafico-concepto-grafico_73426-35.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    width: 55%;
+    height: 260px;
+    border-radius: 25px;
+    float: left;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.contenido .tablas .balance button{
+    float:right;
+}
+
+.contenido .tablas .ingresos{
+    margin-top: 35px;
+    float: right;
+}
+
+.contenido .tablas .ingresos .sub-table{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpUm2yLIFkukbcZePiGAStpcf53pxXSuSKMBvvhn417IjVMqkxn2eT-sggpB8f6Fpspo&usqp=CAU);
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    width: 100%;
+    height: 100px;
+    border-radius: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.contenido .tablas .ingresos .sub-table button{
+    float:right;
+}
+
+.contenido .limit {
+    height: 20%;
+}
+
+.contenido .limit .limit-table{
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    width: 40%;
+    height: 80px;
+    border-radius: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+    font-weight: bold;
+}
+
+.contenido .limit .limit-table button{
+    float:right;
+}
+
+.contenido .limit .limit-bar{
+    width: 80%;
+    height: 5px;
+    margin-top: 6%;
+    background-color: #505ED7;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 970px) {
+    .contenido .dinero {
+        width: 28%;
+        font-size: 10px;
+    }
+    .barra_superior button {
+        width: 50px;
+        font-size: 10px;
+    }
+    input[type=text] {
+        font-size: 10px;
+    }
+    .contenido .tablas .balance {
+        width: 45%;
+    }
+    .contenido .tablas .ingresos{
+        width: 38%;
+    }
+    .contenido .limit .limit-table{
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 708px) {
+    .barra {
+        display: none;
+    }
+    .contenido {
+        width: 100%;
+    }
+    .contenido .dinero {
+        width: 28%;
+        font-size: 10px;
+    }
+    .barra_superior button {
+        width: 50px;
+        font-size: 10px;
+    }
+    input[type=text] {
+        font-size: 10px;
+    }
+    .contenido .tablas .balance {
+        width: 87%;
+    }
+    .contenido .tablas .ingresos{
+        width: 38%;
+    }
+    .contenido .limit .limit-table{
+        width: 38%;
+    }
+}
